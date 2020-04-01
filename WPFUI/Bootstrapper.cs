@@ -3,11 +3,14 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Windows;
+using WPFUI.ViewModels;
 
 namespace WPFUI
 {
     public class Bootstrapper : BootstrapperBase
     {
+        //public Bootstrapper() => Initialize();
+
         public Bootstrapper()
         {
             Initialize();
