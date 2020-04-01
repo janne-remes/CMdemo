@@ -6,7 +6,7 @@ using WPFUI.Models;
 
 namespace WPFUI.ViewModels
 {
-    public class ShellViewModel : Screen
+    public class ShellViewModel : Conductor<Object>
     {
 		private string _firstName;
 		private string _lastName;
@@ -104,6 +104,16 @@ namespace WPFUI.ViewModels
 		{
 			FirstName = "";
 			LastName = "";
+		}
+
+		public void LoadPageOne()
+		{
+			ActivateItemAsync(new FirstChildViewModel(), System.Threading.CancellationToken.None);
+		}
+
+		public void LoadPageTwo()
+		{
+			ActivateItemAsync(new SecondChildViewModel(), System.Threading.CancellationToken.None);
 		}
 	}
 }

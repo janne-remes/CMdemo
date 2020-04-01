@@ -44,10 +44,24 @@
         <TextBlock Grid.Row="3" Grid.Column="2"
                    x:Name="SelectedPerson_LastName"/>
         
-        <!-- Row 4-->
+        <!-- Row 4 -->
         <Button Grid.Row="4" Grid.Column="1" FontSize="14"
                 x:Name="ClearText">
             Clear Names
         </Button>
+
+        <!-- Row 5 -->
+        <Button x:Name="LoadPageOne"
+                Grid.Row="5" Grid.Column="1">
+            Load 1st Page</Button>
+        <Button x:Name="LoadPageTwo"
+                Grid.Row="5" Grid.Column="2">
+            Load 2nd Page
+        </Button>
+
+            <!-- Row 6 -->
+        <ContentControl Grid.Row="6" Grid.Column="1"
+                        Grid.ColumnSpan="5"
+                        x:Name="ActiveItem"/>
     </Grid>
 </Window>
